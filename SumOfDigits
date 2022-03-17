@@ -1,0 +1,24 @@
+//A program in C++ to calculate sum of digits of a number.
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main() {
+    int num, num_copy, count=0, dig, sum=0;
+    long int t;
+    cout<<"Enter a number: ";
+    cin>>num; //input number
+    num_copy=num;
+    for (; num!=0; num/=10) {
+        count++;    //counting number of digits
+    }
+    cout<<"Digits of the number: ";
+    for (int i=1; i<count+1; i++) {
+        t=pow(10,count-i);
+        dig=num_copy/t;
+        num_copy=num_copy%t;
+        cout<<dig<<" ";
+        sum+=dig;
+    }
+    cout<<"\nSum: "<<sum;
+}
