@@ -3,7 +3,8 @@
 using namespace std;
 
 int main() {
-    /*char ch;
+    //simple if else-if
+    char ch;
     cout<<"Enter a character: ";
     cin>>ch;
     if(ch>='a'&& ch<='z') {
@@ -14,17 +15,17 @@ int main() {
     }
     else{
         cout<<"It is a digit."<<endl;
-    } */
+    } 
 
     //while loop
-    /*int i=1;
+    int i=1;
     while(i<=45) {
         cout<<"Hello no."<<i<<endl;
         i++;
-    } */
+    } 
 
     //sum of all even numbers from 1 to n
-    /*int n,sum;
+    int n,sum;
     cout<<"Enter n: ";
     cin>>n;
     sum=0;
@@ -35,7 +36,7 @@ int main() {
         }
         i++;
     }
-    cout<<"The sum is = "<<sum<<endl;*/
+    cout<<"The sum is = "<<sum<<endl;
      
     //pattern1 
     /*
@@ -43,7 +44,7 @@ int main() {
     ****
     ****
     ****
-    
+    */    
     int i=0;
     while(i<4) {
         int j=0;
@@ -56,10 +57,12 @@ int main() {
     }
 
     //pattern 2
+    /*
     *
     **
     ***
     ****
+    */
    int i=0;
     while(i<4) {
         int j=0;
@@ -69,12 +72,13 @@ int main() {
         }
         cout<<endl;
         i++;
-    } */
+    } 
     //pattern 3
     /*
     111
     222
     333
+    */
    int i=1;
    while(i<4) {
     int j=0;
@@ -84,7 +88,7 @@ int main() {
     }
     cout<<endl;
     i++;
-   } */
+   } 
    //pattern 4
    /*
    1
@@ -92,7 +96,7 @@ int main() {
    345
    4567
    */
-   /*int i=0;
+   int i=0;
    while(i<4) {
     int j=1;
     while(j<=i+1){
@@ -101,14 +105,14 @@ int main() {
     }
     cout<<endl;
     i++;
-   } */
+   } 
    // pattern 5
    /*
    AAA
    BBB
    CCC
    */
-  /*int i=0;
+  int i=0;
   char ch='A';
   while(i<3) {
     int j=0;
@@ -119,7 +123,7 @@ int main() {
     cout<<endl;
     ch=ch+1;
     i++;
-  } */
+  } 
   // pattern 6
   /*
      *
@@ -127,7 +131,7 @@ int main() {
    ***
   ****
   */
-  /* int i=1;
+  int i=1;
   while(i<=4) {
     int space=4-i;
     while(space>=0) {
@@ -141,7 +145,7 @@ int main() {
     }
     cout<<endl;
     i++;
-  } */
+  } 
   //pattern 7   STAR PYRAMID
   int i=1;
   int n=4;
