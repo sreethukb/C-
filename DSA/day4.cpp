@@ -2,6 +2,12 @@
 #include<iostream>
 using namespace std;
 
+bool isEven(int a) {
+        if(a&1) 
+                return 0;
+        return 1;
+}
+
 int main() {
     //Question: given an amount, find the number of Rs 100, Rs 50, Rs 20 and Rs 1 notes needed.
     int amt;
@@ -32,4 +38,15 @@ int main() {
                     break;
         }
     }
+
+    //Driver for isEven function
+    int num;
+        cout<<"Enter number: ";
+        cin>>num;
+        if(isEven(num)) {
+                cout<<"Number is even."<<endl;
+        }
+        else {
+                cout<<"Number is odd."<<endl;
+        }
 }
