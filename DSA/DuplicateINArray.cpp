@@ -4,6 +4,23 @@ For example:
 
 Consider ARR = [1, 2, 3, 4, 4], the duplicate integer value present in the array is 4. Hence, the answer is 4 in this case. */
 
+//optimized solution ---> passed 11/11 test cases
+int findDuplicate(vector<int> &arr) 
+{
+    // Write your code here
+    int size = arr.size();
+    int ans = 0;
+    //XOR all 
+    for(int i=0; i<size; i++) {
+        ans = ans^arr[i];
+    }	
+    for(int i=0; i<size; i++) {
+        ans = ans ^ i;
+    }
+    return ans;
+}
+
+//passed 10/11 test cases
 int findDuplicate(vector<int> &arr) 
 {
     // Write your code here
